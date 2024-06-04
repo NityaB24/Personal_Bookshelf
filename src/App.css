@@ -1,38 +1,111 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.header a {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.search a{
+  display: flex;;
+  background: lightgreen;
+  color: #000000;
+  gap: 20px;
+  justify-content: space-between;
+  margin-left: 90vw;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card{
+  width: 300px;
+  height: 40vh;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.title{
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.count{
+  margin-bottom: 40px;
+}
+.title span{
+  font-weight: 900;
+}
+.count span{
+  font-weight: 900;
+}
+
+@media (max-width:960px) {
+  .search a{
+      margin-left: 85vw;
   }
-  to {
-    transform: rotate(360deg);
+  
+}
+
+@media (max-width:768px) {
+  .search a{
+      margin-left: 83vw;
   }
+  
+}
+
+@media (max-width:640px) {
+  .search a{
+      margin-left: 80vw;
+  }
+  
+}
+@media (max-width:500px) {
+  .search a{
+      margin-left: 35%;
+      justify-content: center;
+      align-items: center;
+  }
+  
 }
